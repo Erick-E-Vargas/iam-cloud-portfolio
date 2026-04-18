@@ -66,6 +66,26 @@ This establishes the core identity system for the hybrid IAM environment.
 
 ---
 
+## 🧱 IAM OU Structure Implementation
+
+A structured IAM model was implemented inside Active Directory under the IAM OU.
+
+### Sub-OUs Created:
+- Users (standard identities)
+- Admins (administrative identities)
+- Service Accounts (system identities)
+- Groups (authorization layer)
+- Workstations (endpoint identity layer)
+
+### Initial User Accounts:
+- erick.vargas (standard user)
+- test.user1 (test user)
+- iam.admin (privileged user in Domain Admins)
+
+This structure follows enterprise IAM design principles including separation of duties and role-based access control (RBAC).
+
+---
+
 ## 🧠 Notes
 
 This environment will be used to simulate:
