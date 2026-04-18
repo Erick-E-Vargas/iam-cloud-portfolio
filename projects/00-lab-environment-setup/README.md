@@ -86,6 +86,21 @@ This structure follows enterprise IAM design principles including separation of 
 
 ---
 
+## ☁️ Hybrid Identity Setup (Microsoft Entra Connect)
+
+Microsoft Entra Connect was installed on DC01 to enable synchronization between on-premises Active Directory and Microsoft Entra ID.
+
+### Configuration:
+- Sync Type: Password Hash Synchronization (PHS)
+- Scope: IAM OU
+- Source: iamlab.local
+- Target: eviamlab.onmicrosoft.com
+
+### Result:
+On-premises user accounts are now synchronized to Microsoft Entra ID, enabling hybrid identity management.
+
+---
+
 ## 🧠 Notes
 
 This environment will be used to simulate:
