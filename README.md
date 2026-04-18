@@ -1,16 +1,16 @@
-# IAM & Cloud Portfolio – Erick Vargas
+# IAM & Cloud Security Portfolio – Erick Vargas
 
-## 👋 About Me
-IAM Engineer focused on Microsoft Entra ID, hybrid identity, and cloud security fundamentals. Currently preparing for SC-300 certification and building hands-on enterprise identity labs.
+IAM Engineer focused on Microsoft Entra ID, Hybrid Identity (Active Directory integration), and enterprise identity security.  
+This portfolio documents hands-on labs aligned with real IAM engineering and SC-300 certification objectives.
 
 ---
 
 ## 🎯 Focus Areas
 - Microsoft Entra ID (Azure AD)
-- Hybrid Identity (Active Directory integration)
-- SSO (SAML, OAuth2, OpenID Connect)
-- Identity Governance (PIM, Access Reviews)
-- Cloud Federation (AWS + Azure)
+- Hybrid Identity (AD DS + Entra ID)
+- Authentication & SSO (SAML, OAuth2, OpenID Connect)
+- Identity Governance (Access Reviews, PIM)
+- Cloud Federation (AWS + Entra ID)
 - Zero Trust Identity Security
 
 ---
