@@ -1,21 +1,32 @@
-# IAM Core Concepts
+# IAM Core Concepts (Engineering Reference)
 
 ## Authentication vs Authorization
-- Authentication = Who you are
-- Authorization = What you can access
+- Authentication: Verifying identity (who you are)
+- Authorization: Determining access (what you can do)
 
-## SAML
+---
+
+## SAML (Security Assertion Markup Language)
 - Enterprise SSO protocol
 - XML-based assertions
-- Browser-based authentication
+- Common in SaaS integrations (Salesforce, ServiceNow)
+
+---
 
 ## OAuth 2.0
-- Delegated authorization
-- API access control
+- Authorization framework
+- Used for API access delegation
+- Does NOT handle authentication alone
+
+---
 
 ## OpenID Connect (OIDC)
-- Authentication layer over OAuth2
-- Uses JWT tokens
+- Identity layer built on OAuth 2.0
+- Used for modern authentication flows
+- Returns ID tokens (JWT)
+
+---
 
 ## Hybrid Identity
-- On-prem Active Directory + cloud Entra ID integration
+- Integration between on-prem Active Directory and Microsoft Entra ID
+- Enables centralized identity management across cloud and on-prem systems
