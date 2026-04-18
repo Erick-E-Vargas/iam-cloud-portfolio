@@ -1,21 +1,28 @@
 # IAM Engineer Portfolio View
 
-## Focus Skills
-- Microsoft Entra ID administration
-- Hybrid identity management
-- SSO implementation (SAML/OIDC)
+This view highlights projects and skills relevant to IAM Engineer roles focused on Microsoft Entra ID and enterprise identity management.
+
+---
+
+## 🧠 Core Skill Areas
+- Hybrid Identity (Active Directory + Entra ID)
+- Enterprise SSO (SAML, OIDC)
 - Identity lifecycle management
+- Access governance (PIM, Access Reviews)
 
 ---
 
-## Relevant Projects (coming soon)
-- Hybrid Identity Lab (AD → Entra ID)
-- SSO Implementation Lab
-- PIM Access Governance Lab
+## 🧪 Relevant Projects (in progress)
 
----
+### Hybrid Identity Lab
+- On-prem Active Directory integrated with Microsoft Entra ID
+- Entra Connect synchronization
+- User lifecycle validation
 
-## Core Technical Areas
-- Identity provisioning & deprovisioning
-- Enterprise authentication flows
-- Directory synchronization
+### SSO Implementation Lab
+- SAML-based enterprise application integration
+- OIDC application registration in Entra ID
+
+### PIM & Access Governance Lab
+- Just-in-time role activation
+- Privileged access management simulation
