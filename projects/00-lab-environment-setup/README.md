@@ -54,6 +54,18 @@ At this stage, the server is prepared for promotion to a Domain Controller, wher
 
 ---
 
+## 🧪 Active Directory Domain Creation
+
+DC01 was promoted to a Domain Controller, creating a new Active Directory forest.
+
+- Domain: iamlab.local
+- NetBIOS Name: IAMLAB
+- Roles: DNS, Global Catalog
+
+This establishes the core identity system for the hybrid IAM environment.
+
+---
+
 ## 🧠 Notes
 
 This environment will be used to simulate:
