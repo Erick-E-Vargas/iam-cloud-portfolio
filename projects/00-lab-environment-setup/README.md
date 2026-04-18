@@ -46,6 +46,14 @@ Detailed OS installation steps are omitted as they are standard and not IAM-spec
 
 ---
 
+## 🔧 Active Directory Domain Services Installation
+
+The Active Directory Domain Services (AD DS) role was installed on DC01 using Server Manager.
+
+At this stage, the server is prepared for promotion to a Domain Controller, where the Active Directory forest will be created.
+
+---
+
 ## 🧠 Notes
 
 This environment will be used to simulate:
