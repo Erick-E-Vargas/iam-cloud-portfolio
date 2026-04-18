@@ -34,7 +34,7 @@ Cloud
 
 ### Cloud (Entra ID)
 - Tenant Domain: eviamlab.onmicrosoft.com
-- Tenant Name: IAM Lab – Erick Vargas
+- Tenant Name: IAM Lab - Erick Vargas
 
 ---
 
