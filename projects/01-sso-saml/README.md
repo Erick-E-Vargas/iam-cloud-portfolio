@@ -36,3 +36,16 @@ Implement Single Sign-On (SSO) using SAML with Microsoft Entra ID.
 - Identity Provider (IdP): Microsoft Entra ID
 - Service Provider (SP): IAM Test App
 - Protocol: SAML 2.0
+
+---
+
+## 📸 Screenshots
+
+### Application Overview
+![App Overview](screenshots/01-app-overview.png)
+
+### SAML Configuration
+![SAML Configuration](screenshots/02-saml-configuration.png)
+
+### User Assignment
+![User Assignment](screenshots/03-user-assignment.png)
