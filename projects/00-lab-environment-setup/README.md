@@ -101,6 +101,18 @@ On-premises user accounts are now synchronized to Microsoft Entra ID, enabling h
 
 ---
 
+## 🔄 Hybrid Identity Validation
+
+User accounts synchronized from Active Directory are now visible in Microsoft Entra ID, confirming successful hybrid identity configuration.
+
+This validates end-to-end identity provisioning:
+
+On-Prem AD → Entra Connect → Microsoft Entra ID
+
+Authentication layer (SSO, SAML, OAuth, OIDC) will be implemented in the next phase.
+
+---
+
 ## 🧠 Notes
 
 This environment will be used to simulate:
