@@ -57,6 +57,19 @@ This app will be used to simulate OAuth 2.0 and OpenID Connect authentication fl
 
 ---
 
+## 🌐 API Authorization Test
+
+The access token was used to successfully call Microsoft Graph API.
+
+### Request
+GET https://graph.microsoft.com/v1.0/me
+
+### Result
+User profile information was retrieved, confirming successful authorization.
+
+![Graph API Call](screenshots/06-graph-api-call.png)
+---
+
 ## Key Insight
 Token contents depend on requested scopes. Additional claims are only included when explicitly requested.
 
