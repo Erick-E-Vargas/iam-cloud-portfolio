@@ -24,5 +24,18 @@ Implement and understand modern authentication using OAuth 2.0 and OpenID Connec
 
 ---
 
+## 🔧 App Registration
+
+An application was registered in Microsoft Entra ID to act as an OAuth client.
+
+### Configuration:
+- Name: IAM OAuth Test App
+- Redirect URI: https://localhost
+- Supported Accounts: Single tenant
+
+This app will be used to simulate OAuth 2.0 and OpenID Connect authentication flows.
+
+---
+
 ## Status
 🚧 In progress
