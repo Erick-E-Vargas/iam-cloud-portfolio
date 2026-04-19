@@ -37,5 +37,30 @@ This app will be used to simulate OAuth 2.0 and OpenID Connect authentication fl
 
 ---
 
+## 🔍 Token Comparison (Scopes Impact)
+
+### Minimal Token (scope = openid)
+- Contains only basic identity claims
+- Uses `sub` as unique identifier
+
+![Minimal Token](screenshots/03-id-token-minimal.png)
+
+---
+
+### Expanded Token (scope = openid profile email)
+- Includes additional user information:
+  - name
+  - preferred_username
+  - email
+
+![Token with Claims](screenshots/04-id-token-with-claims.png)
+
+---
+
+## Key Insight
+Token contents depend on requested scopes. Additional claims are only included when explicitly requested.
+
+---
+
 ## Status
 🚧 In progress
