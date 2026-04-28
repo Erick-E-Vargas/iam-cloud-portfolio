@@ -38,7 +38,24 @@ A Conditional Access policy was created to enforce Multi-Factor Authentication (
 
 ## 🧠 Key Insight
 Privileged accounts require stronger authentication controls to reduce risk of compromise.
+
 ---
+
+## 🚫 Conditional Access Policy – Block High-Risk Sign-Ins
+
+A policy was created to block access when a sign-in is classified as high risk.
+
+### Configuration:
+- Users: All users
+- Applications: All cloud apps
+- Condition: High sign-in risk
+- Access Control: Block access
+- Mode: Report-only
+
+---
+
+## 🧠 Key Insight
+Access decisions should consider risk signals, not just identity. High-risk sign-ins are blocked to prevent potential account compromise.---
 
 
 ## 🚀 Status
