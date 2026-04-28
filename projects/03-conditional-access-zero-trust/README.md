@@ -77,6 +77,28 @@ A policy was created to restrict access based on geographic location.
 
 ## 🧠 Key Insight
 Access should be restricted based on geographic risk. Only trusted locations are allowed, reducing exposure to unauthorized access attempts from unknown regions.
+
+---
+
+## 🧪 Policy Validation and Enforcement
+
+Conditional Access policies were initially deployed in report-only mode to evaluate impact without affecting users.
+
+### Validation:
+- Sign-in logs were reviewed to analyze policy behavior
+- Conditional Access evaluation confirmed expected outcomes
+
+### Enforcement:
+- MFA policy for admin accounts was enabled
+
+### Result:
+Admin users are now required to complete Multi-Factor Authentication during login.
+
+---
+
+## 🧠 Key Insight
+Policies should always be tested in report-only mode before enforcement to prevent unintended access issues.
+
 ---
 
 
