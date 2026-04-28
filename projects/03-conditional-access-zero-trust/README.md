@@ -2,7 +2,7 @@
 
 ## 🎯 Objective
 
-Implement Conditional Access policies to enforce secure access controls based on Zero Trust principles.
+Implement Conditional Access policies to enforce secure access controls based on Zero Trust principles, including MFA, risk-based, and location-based access.
 
 ---
 
@@ -10,8 +10,9 @@ Implement Conditional Access policies to enforce secure access controls based on
 
 * Conditional Access policy creation
 * Multi-Factor Authentication (MFA) enforcement
-* User-based access control
-* Zero Trust security model implementation
+* Risk-based access control
+* Location-based access control
+* Policy validation and safe enforcement
 
 ---
 
@@ -21,88 +22,105 @@ Implement Conditional Access policies to enforce secure access controls based on
 * Multi-Factor Authentication (MFA)
 * Zero Trust Model
 * Policy-based access control
-  
----
-
-## 🔐 Conditional Access Policy – MFA for Admins
-
-A Conditional Access policy was created to enforce Multi-Factor Authentication (MFA) for privileged accounts.
-
-### Configuration:
-- Users: iam.admin
-- Applications: All cloud apps
-- Grant Control: Require MFA
-- Mode: Report-only
+* Risk-based authentication
 
 ---
 
-## 🧠 Key Insight
-Privileged accounts require stronger authentication controls to reduce risk of compromise.
+## 🔐 Conditional Access Policies
+
+### 1. MFA for Admin Accounts
+
+* **Users:** iam.admin
+* **Applications:** All cloud apps
+* **Control:** Require MFA
+* **Mode:** Enforced
+
+![MFA Policy](screenshots/01-mfa-policy.png)
 
 ---
 
-## 🚫 Conditional Access Policy – Block High-Risk Sign-Ins
+### 2. Block High-Risk Sign-Ins
 
-A policy was created to block access when a sign-in is classified as high risk.
+* **Users:** All users
+* **Applications:** All cloud apps
+* **Condition:** High sign-in risk
+* **Control:** Block access
+* **Mode:** Report-only
 
-### Configuration:
-- Users: All users
-- Applications: All cloud apps
-- Condition: High sign-in risk
-- Access Control: Block access
-- Mode: Report-only
-
----
-
-## 🧠 Key Insight
-Access decisions should consider risk signals, not just identity. High-risk sign-ins are blocked to prevent potential account compromise.
+![Risk Policy](screenshots/02-block-high-risk.png)
 
 ---
 
-## 🌍 Conditional Access Policy – Location-Based Access Control
+### 3. Location-Based Access Control
 
-A policy was created to restrict access based on geographic location.
+* **Named Location:** Trusted Location - Mexico
+* **Users:** All users
+* **Applications:** All cloud apps
+* **Condition:** Any location excluding trusted location
+* **Control:** Block access
+* **Mode:** Report-only
 
-### Named Location:
-- Trusted Location: Mexico
-
-### Policy Configuration:
-- Users: All users
-- Applications: All cloud apps
-- Condition: Any location excluding trusted location
-- Access Control: Block access
-- Mode: Report-only
+![Named Location](screenshots/03-named-location.png)
+![Location Policy](screenshots/04-location-policy.png)
 
 ---
 
-## 🧠 Key Insight
-Access should be restricted based on geographic risk. Only trusted locations are allowed, reducing exposure to unauthorized access attempts from unknown regions.
+## 🧪 Validation and Testing
+
+Policies were first deployed in report-only mode to evaluate their impact without affecting users.
+
+### Validation Steps:
+
+* Reviewed sign-in logs
+* Analyzed Conditional Access evaluation results
+
+![Sign-in Logs](screenshots/05-signin-logs-report-only.png)
 
 ---
 
-## 🧪 Policy Validation and Enforcement
+## 🚀 Enforcement
 
-Conditional Access policies were initially deployed in report-only mode to evaluate impact without affecting users.
-
-### Validation:
-- Sign-in logs were reviewed to analyze policy behavior
-- Conditional Access evaluation confirmed expected outcomes
-
-### Enforcement:
-- MFA policy for admin accounts was enabled
+The MFA policy for admin accounts was enabled and tested.
 
 ### Result:
-Admin users are now required to complete Multi-Factor Authentication during login.
+
+* Admin users are required to complete MFA during login
+
+![MFA Enforcement](screenshots/06-mfa-enforcement.png)
 
 ---
 
-## 🧠 Key Insight
-Policies should always be tested in report-only mode before enforcement to prevent unintended access issues.
+## 🧠 Zero Trust Model
+
+This implementation follows Zero Trust principles:
+
+* Never trust by default
+* Always verify identity
+* Evaluate risk and context before granting access
 
 ---
 
+## 📊 Architecture Diagram
+
+![Zero Trust Flow](diagrams/zero-trust-conditional-access.png)
+
+---
+
+## 🧠 Key Insights
+
+* Access decisions should consider identity, location, and risk
+* Policies should be tested before enforcement
+* Privileged accounts require stronger controls
+* Conditional Access is central to Zero Trust architecture
+
+---
+
+## 📅 Execution Timeline
+
+* Implemented: April 2026
+
+---
 
 ## 🚀 Status
 
-🚧 In progress
-
+✅ Completed
